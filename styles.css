@@ -847,6 +847,7 @@ body {
 
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     .stats {
@@ -856,33 +857,213 @@ body {
     .image-text {
         display: none;
     }
+
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .portfolio-image {
+        height: 250px;
+    }
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
     .nav-menu {
         display: none;
+    }
+
+    .btn-contact {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 120px 0 80px;
+    }
+
+    .hero-container {
+        gap: 40px;
     }
 
     .hero-title {
         font-size: 48px;
     }
 
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-email,
+    .hero-address {
+        font-size: 14px;
+    }
+
+    .image-placeholder {
+        width: 280px;
+        height: 280px;
+    }
+
     .section-title {
-        font-size: 36px;
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .section-label {
+        font-size: 12px;
+    }
+
+    .about-info-centered {
+        padding: 0 15px;
+    }
+
+    .info-item {
+        font-size: 14px;
+    }
+
+    .cv-download {
+        margin-top: 25px;
+    }
+
+    .btn-download {
+        padding: 12px 25px;
+        font-size: 14px;
     }
 
     .services-grid,
     .portfolio-grid,
     .reviews-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portfolio-image {
+        height: 220px;
+    }
+
+    .portfolio-info {
+        padding: 20px;
+    }
+
+    .portfolio-title {
+        font-size: 16px;
+    }
+
+    .portfolio-category {
+        font-size: 12px;
+    }
+
+    .service-card,
+    .review-card {
+        padding: 30px 20px;
+    }
+
+    .service-title {
+        font-size: 18px;
+    }
+
+    .service-description {
+        font-size: 13px;
     }
 
     .stats {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .stat-card {
+        padding: 30px 15px;
+    }
+
+    .stat-number {
+        font-size: 32px;
+    }
+
+    .contact-content {
+        gap: 40px;
+    }
+
+    .contact-item {
+        padding: 20px;
+    }
+
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .form-row input,
+    .form-row textarea {
+        padding: 12px 15px;
+        font-size: 13px;
     }
 
     .footer-social {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+    }
+
+    .footer-social-link {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .notification-success {
+        max-width: 320px;
+        padding: 15px 20px;
+        font-size: 13px;
+    }
+
+    .notification-success.show {
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .image-placeholder {
+        width: 240px;
+        height: 240px;
+    }
+
+    .portfolio-image {
+        height: 200px;
+    }
+
+    .stat-card {
+        padding: 25px 10px;
+    }
+
+    .stat-number {
+        font-size: 28px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
     }
 }
