@@ -11,7 +11,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <span class="logo-text">Cri</span>
+                <span class="logo-text"></span>
                 <div class="logo-icon"></div>
             </div>
             <ul class="nav-menu">
@@ -19,10 +19,9 @@
                 <li><a href="#about" class="nav-link">Sobre Mí</a></li>
                 <li><a href="#services" class="nav-link">Servicios</a></li>
                 <li><a href="#portfolio" class="nav-link">Portafolio</a></li>
-                <li><a href="#blog" class="nav-link">Blog</a></li>
                 <li><a href="#contact" class="nav-link">Contacto</a></li>
             </ul>
-            <button class="btn-contact">Contacto</button>
+            <a href="Cristhian Arturo Medina Camayo cv.pdf" download class="btn-contact">Descargar CV</a>
         </div>
     </nav>
 
@@ -52,10 +51,10 @@
     <section id="about" class="about">
         <div class="container">
             <p class="section-label">SOBRE MÍ</p>
-            <h2 class="section-title">Sobre Mi Currículum</h2>
+            <h2 class="section-title">Sobre Mí</h2>
             
             <div class="about-content">
-                <div class="about-info">
+                <div class="about-info-centered">
                     <div class="info-item">
                         <span class="info-label">Edad:</span>
                         <span class="info-value">31</span>
@@ -64,25 +63,19 @@
                         <span class="info-label">Residencia:</span>
                         <span class="info-value">Perú</span>
                     </div>
-                    <!-- <div class="info-item">
-                        <span class="info-label">Dirección:</span>
-                        <span class="info-value">Villa María del Triunfo, Lima</span>
-                    </div> -->
                     <div class="info-item">
                         <span class="info-label">E-mail:</span>
                         <span class="info-value">cristhianmc84@gmail.com</span>
                     </div>
-                    <!-- <div class="info-item">
-                        <span class="info-label">DNI:</span>
-                        <span class="info-value">74625021</span>
-                    </div> -->
                     <div class="info-item">
                         <span class="info-label">Freelance:</span>
                         <span class="info-value">Disponible</span>
                     </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" alt="Team working">
+                    <div class="cv-download">
+                        <a href="Cristhian Arturo Medina Camayo cv.pdf" download class="btn-download">
+                            <i class="fas fa-download"></i> Descargar CV
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -268,6 +261,18 @@
                     </a>
                 </div>
 
+                <div class="portfolio-item" data-category="design">
+                    <a href="https://cementeriodedatos.netlify.app/" target="_blank" class="portfolio-link">
+                        <div class="portfolio-image">
+                            <img src="Captura de pantalla 2025-11-20 202102.png" alt="Cementerio de Datos">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Cementerio de Datos</h3>
+                            <p class="portfolio-category">E-commerce - Productos Halloween</p>
+                        </div>
+                    </a>
+                </div>
+
                
 <!-- 
             <div class="portfolio-cta">
@@ -314,7 +319,7 @@
                     </div>
                 </div>
 
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm">
                     <div class="form-row">
                         <input type="text" placeholder="Tu Nombre *" required>
                     </div>
@@ -336,7 +341,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-logo">
-                <span class="logo-text">Cri</span>
+                <span class="logo-text"></span>
                 <div class="logo-icon"></div>
             </div>
             <p class="footer-text">Desarrollador Frontend con 1 año de experiencia especializado en React.js, JavaScript y Node.js. Creando interfaces web funcionales, escalables y optimizadas para mejorar la experiencia del usuario.</p>
@@ -355,6 +360,10 @@
             <p class="footer-copyright">&copy; 2025 Todos los Derechos Reservados. Hecho con Dedicación por Cristhian Medina</p>
         </div>
     </footer>
+
+    <a href="https://wa.me/51955195324" target="_blank" class="whatsapp-float" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>

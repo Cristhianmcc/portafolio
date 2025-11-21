@@ -39,21 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    const btnContact = document.querySelector('.btn-contact');
-    if (btnContact) {
-        btnContact.addEventListener('click', function(e) {
-            e.preventDefault();
-            const contactSection = document.querySelector('#contact');
-            if (contactSection) {
-                window.scrollTo({
-                    top: contactSection.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    }
-
-    filterBtns.forEach(btn => {
+    const filterBtns = document.querySelectorAll('.filter-btn');
         btn.addEventListener('click', function() {
             filterBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
@@ -95,17 +81,47 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            const formData = new FormData(contactForm);
             const name = contactForm.querySelector('input[type="text"]').value;
             const email = contactForm.querySelector('input[type="email"]').value;
             const topic = contactForm.querySelectorAll('input[type="text"]')[1].value;
             const message = contactForm.querySelector('textarea').value;
             
-            console.log('Form submitted:', { name, email, topic, message });
+            // Mostrar mensaje de carga
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            submitBtn.disabled = true;
             
-            alert('Thank you for your message! I will get back to you soon.');
-            
-            contactForm.reset();
+            // Simular envío con un pequeño delay
+            setTimeout(() => {
+                // Crear notificación de éxito
+                const notification = document.createElement('div');
+                notification.className = 'notification-success';
+                notification.innerHTML = `
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <strong>¡Mensaje enviado exitosamente!</strong>
+                        <p>Gracias ${name}, me pondré en contacto contigo pronto.</p>
+                    </div>
+                `;
+                document.body.appendChild(notification);
+                
+                // Mostrar notificación con animación
+                setTimeout(() => notification.classList.add('show'), 100);
+                
+                // Ocultar y eliminar notificación después de 5 segundos
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                    setTimeout(() => notification.remove(), 300);
+                }, 5000);
+                
+                // Resetear formulario
+                contactForm.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                
+                console.log('Mensaje enviado:', { name, email, topic, message });
+            }, 1500);
         });
     }
 

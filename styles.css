@@ -254,9 +254,8 @@ body {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    display: flex;
+    justify-content: center;
     margin-bottom: 60px;
 }
 
@@ -264,6 +263,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.about-info-centered {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .info-item {
@@ -281,6 +289,36 @@ body {
 .info-value {
     color: var(--text-white);
     font-weight: 500;
+}
+
+.cv-download {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--primary-purple) 0%, #a855f7 100%);
+    color: var(--text-white);
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-download:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+    border-color: var(--primary-purple);
+}
+
+.btn-download i {
+    font-size: 16px;
 }
 
 .about-image {
@@ -713,6 +751,86 @@ body {
     font-size: 13px;
     padding-top: 30px;
     border-top: 1px solid rgba(156, 163, 175, 0.1);
+}
+
+.notification-success {
+    position: fixed;
+    top: 100px;
+    right: -400px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 10000;
+    max-width: 400px;
+    transition: right 0.3s ease;
+}
+
+.notification-success.show {
+    right: 30px;
+}
+
+.notification-success i {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.notification-success strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.notification-success p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    left: 30px;
+    background-color: #25d366;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    animation: pulse-whatsapp 2s infinite;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-float i {
+    color: #ffffff;
+}
+
+@keyframes pulse-whatsapp {
+    0% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8), 0 0 0 10px rgba(37, 211, 102, 0.1);
+    }
+    100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    }
 }
 
 @media (max-width: 1024px) {
