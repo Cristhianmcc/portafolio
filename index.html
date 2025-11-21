@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristhian Medina - Desarrollador Frontend | React</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Cri</span>
+                <div class="logo-icon"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#services" class="nav-link">Servicios</a></li>
+                <li><a href="#portfolio" class="nav-link">Portafolio</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="btn-contact">Contacto</button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">HOLA, SOY</p>
+                <h1 class="hero-title">Cristhian Medina</h1>
+                <p class="hero-description">Desarrollador Frontend | React</p>
+                <a href="mailto:cristhianmc84@gmail.com" class="hero-email">cristhianmc84@gmail.com</a>
+                <p class="hero-address">Villa María del Triunfo, Lima, Perú</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/cristhian-medina-7b6b54228/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Cristhianmcc" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-bg-circle"></div>
+                <div class="image-placeholder">
+                    <img src="perfil.png" alt="Cristhian Medina">
+                </div>
+                <div class="image-text">CRISTHIAN</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <p class="section-label">SOBRE MÍ</p>
+            <h2 class="section-title">Sobre Mi Currículum</h2>
+            
+            <div class="about-content">
+                <div class="about-info">
+                    <div class="info-item">
+                        <span class="info-label">Edad:</span>
+                        <span class="info-value">31</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Residencia:</span>
+                        <span class="info-value">Perú</span>
+                    </div>
+                    <!-- <div class="info-item">
+                        <span class="info-label">Dirección:</span>
+                        <span class="info-value">Villa María del Triunfo, Lima</span>
+                    </div> -->
+                    <div class="info-item">
+                        <span class="info-label">E-mail:</span>
+                        <span class="info-value">cristhianmc84@gmail.com</span>
+                    </div>
+                    <!-- <div class="info-item">
+                        <span class="info-label">DNI:</span>
+                        <span class="info-value">74625021</span>
+                    </div> -->
+                    <div class="info-item">
+                        <span class="info-label">Freelance:</span>
+                        <span class="info-value">Disponible</span>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" alt="Team working">
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">React</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">JS</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Node</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Git</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <p class="section-label">SERVICIOS</p>
+            <h2 class="section-title">Mis Servicios</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="service-title">Desarrollo React.js</h3>
+                    <p class="service-description">Creación de aplicaciones web con React.js, optimizando la experiencia del usuario mediante interfaces dinámicas y eficientes.</p>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Desarrollo Frontend</h3>
+                    <p class="service-description">Desarrollo y mantenimiento de aplicaciones web, optimizando interfaces de usuario para una experiencia fluida y responsiva.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Diseño Responsivo</h3>
+                    <p class="service-description">Implementación de diseños adaptativos que funcionan perfectamente en cualquier dispositivo utilizando Bootstrap y Tailwind CSS.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="service-title">Optimización SEO</h3>
+                    <p class="service-description">Optimización de sitios web para mejorar el posicionamiento en motores de búsqueda y aumentar la visibilidad online.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3 class="service-title">Control de Versiones</h3>
+                    <p class="service-description">Gestión del código fuente utilizando Git y GitHub, asegurando un ciclo de desarrollo ágil y colaborativo.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3 class="service-title">Testing y Calidad</h3>
+                    <p class="service-description">Implementación de pruebas unitarias y de integración para garantizar la calidad del código y funcionalidad de aplicaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <p class="section-label">EXPERIENCIA PROFESIONAL</p>
+            <h2 class="section-title">Experiencia Laboral</h2>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p class="review-text">Diseño y desarrollo de aplicaciones web con React.js, optimizando la experiencia del usuario mediante la creación de interfaces dinámicas y eficientes. Implementación de lógica de negocio en JavaScript y solución de errores en código fuente.</p>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Instituto Superior Tecnológico Público Lurín</h4>
+                            <p class="author-role">Front-End Developer | 2024 - Actualidad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <p class="review-text">Desarrollo y mantenimiento de la capa frontend de aplicaciones web, optimizando interfaces de usuario para una experiencia fluida y responsiva. Implementación de pruebas unitarias y de integración para garantizar la calidad del código.</p>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Freelance</h4>
+                            <p class="author-role">Frontend Developer | Sep 2023 - Feb 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <p class="section-label">PORTAFOLIO CREATIVO</p>
+            <h2 class="section-title">Mis Proyectos</h2>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="design">Diseño Web</button>
+                <button class="filter-btn" data-filter="development">Desarrollo</button>
+                <button class="filter-btn" data-filter="photography">Aplicaciones</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="development">
+                    <a href="https://votaciones-10kh.onrender.com" target="_blank" class="portfolio-link">
+                        <div class="portfolio-image">
+                            <img src="image.png" alt="Sistema de Votaciones Electrónicas">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Sistema de Votaciones Electrónicas</h3>
+                            <p class="portfolio-category">PHP - MySQL - Sistema Electoral</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item" data-category="development">
+                    <a href="https://lurinalmacen.onrender.com/login" target="_blank" class="portfolio-link">
+                        <div class="portfolio-image">
+                            <img src="WhatsApp Image 2025-10-20 at 7.48.52 PM.jpeg" alt="Sistema de Gestión de Almacén">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Sistema de Gestión de Almacén</h3>
+                            <p class="portfolio-category">Gestión de Inventario - Control de Stock</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item" data-category="design">
+                    <a href="https://promptslabs.onrender.com/" target="_blank" class="portfolio-link">
+                        <div class="portfolio-image">
+                            <img src="Captura de pantalla 2025-11-20 193402.png" alt="Galería de Prompts para IA">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Galería de Prompts para IA</h3>
+                            <p class="portfolio-category">Plataforma Web - Inteligencia Artificial</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item" data-category="photography">
+                    <a href="https://todobalon.netlify.app/" target="_blank" class="portfolio-link">
+                        <div class="portfolio-image">
+                            <img src="Captura de pantalla 2025-11-20 193649.png" alt="Plataforma de Deportes en Vivo">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Todo Balón - Deportes en Vivo</h3>
+                            <p class="portfolio-category">Streaming - Deportes - React</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item" data-category="photography">
+                    <a href="https://piratatecnologico.netlify.app/" target="_blank" class="portfolio-link">
+                        <div class="portfolio-image">
+                            <img src="Captura de pantalla 2025-11-20 193830.png" alt="Pirata Tecnológico">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Pirata Tecnológico</h3>
+                            <p class="portfolio-category">Catálogo de Software - Tecnología</p>
+                        </div>
+                    </a>
+                </div>
+
+               
+<!-- 
+            <div class="portfolio-cta">
+                <button class="btn-primary">Cargar Más</button>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <p class="section-label">CONTÁCTAME</p>
+            <h2 class="section-title">Me Encantaría Saber de Ti,<br>¡Ponte en Contacto!</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Correo Electrónico</h4>
+                            <p>cristhianmc84@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>DNI</h4>
+                            <p>74625021</p>
+                        </div>
+                    </div> -->
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Ubicación</h4>
+                            <p>Villa María del Triunfo, Lima, Perú</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Tu Nombre *" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" placeholder="Correo Electrónico *" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Asunto *" required>
+                    </div>
+                    <div class="form-row">
+                        <textarea placeholder="Tu Mensaje *" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo-text">Cri</span>
+                <div class="logo-icon"></div>
+            </div>
+            <p class="footer-text">Desarrollador Frontend con 1 año de experiencia especializado en React.js, JavaScript y Node.js. Creando interfaces web funcionales, escalables y optimizadas para mejorar la experiencia del usuario.</p>
+            
+            <div class="footer-social">
+                <a href="https://github.com/Cristhianmcc" target="_blank" class="footer-social-link">
+                    <i class="fab fa-github"></i>
+                    <span>Github</span>
+                </a>
+                <a href="https://www.linkedin.com/in/cristhian-medina-7b6b54228/" target="_blank" class="footer-social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>Linkedin</span>
+                </a>
+            </div>
+
+            <p class="footer-copyright">&copy; 2025 Todos los Derechos Reservados. Hecho con Dedicación por Cristhian Medina</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
